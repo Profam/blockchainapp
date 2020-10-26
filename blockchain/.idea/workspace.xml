@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f8354d7-6a85-44fd-b76b-c682ec89086d" name="Default Changelist" comment="Init commit: mvp project">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/Block.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/ApplicationConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/controller/BlockController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/WalletUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repo/BlockRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/BlockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/HashUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/resources/changelog-master.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/ApplicationConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/web/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-ui/web-ui.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework-JD2/hw-data-model/hw-data-model.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jJytq9WWxorZdglVp95JqhfWEh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="by.rabtsevich.web" />
+      <recent name="main.java.by.rabtsevich.web" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="web" />
+      <recent name="controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\golda\IdeaProjects\blockchain" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\resources" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ApplicationConfiguration" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mining-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="by.rabtsevich.ApplicationConfiguration" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f8354d7-6a85-44fd-b76b-c682ec89086d" name="Default Changelist" comment="" />
+      <created>1603536706347</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603536706347</updated>
+      <workItem from="1603536713067" duration="20863000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit: mvp project(simple mining, db, home page in frontend)" />
+    <MESSAGE value="Init commit: mvp project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit: mvp project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="324" width="589" height="216" key="#Assign_Data_Sources" timestamp="1603718427908">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="418" y="324" width="589" height="216" key="#Assign_Data_Sources/0.0.2048.1112@0.0.2048.1112" timestamp="1603718427908" />
+    <state x="651" y="235" key="#Inspections" timestamp="1603700837609">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="651" y="235" key="#Inspections/0.0.2048.1112@0.0.2048.1112" timestamp="1603700837609" />
+    <state x="0" y="131" key="#Project_Structure" timestamp="1603702304303">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="0" y="131" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1603702304303" />
+    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603708896063">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603708896063" />
+    <state x="143" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603701589261">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="143" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603701589261" />
+    <state x="883" y="776" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603550822042">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="883" y="776" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603550822042" />
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603703293397">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603703293397" />
+    <state x="293" y="311" key="FileChooserDialogImpl" timestamp="1603702138840">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="293" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1603702138840" />
+    <state width="2005" height="311" key="GridCell.Tab.0.bottom" timestamp="1603708815922">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="311" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1603708815922" />
+    <state width="2005" height="311" key="GridCell.Tab.0.center" timestamp="1603708815922">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="311" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1603708815922" />
+    <state width="2005" height="311" key="GridCell.Tab.0.left" timestamp="1603708815922">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="311" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1603708815922" />
+    <state width="2005" height="311" key="GridCell.Tab.0.right" timestamp="1603708815922">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="311" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1603708815922" />
+    <state x="157" y="242" key="spring file set editor" timestamp="1603700563480">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="157" y="242" key="spring file set editor/0.0.2048.1112@0.0.2048.1112" timestamp="1603700563480" />
+  </component>
+</project>

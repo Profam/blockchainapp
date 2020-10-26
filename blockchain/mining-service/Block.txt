@@ -1,0 +1,15 @@
+/*
+        //Increases nonce value until hash target is reached.
+        public void mineBlock(int difficulty) throws NoSuchAlgorithmException {
+            data = by.rabtsevich.util.HashUtil.getData(transactions);
+            String target = by.rabtsevich.util.HashUtil.getDificultyString(difficulty); //Create a string with difficulty * "0"
+            while(!hash.substring( 0, difficulty).equals(target)) {
+                nonce ++;
+                hash = calculateHash();
+            }
+            System.out.println("by.rabtsevich.pojo.Block Mined!!! : " + hash);
+        }*/
+// public ArrayList<by.rabtsevich.pojo.Transaction> transactions = new ArrayList<by.rabtsevich.pojo.Transaction>();
+
+private int nonce;
+    private String data;
