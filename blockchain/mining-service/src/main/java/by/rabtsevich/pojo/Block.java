@@ -29,8 +29,6 @@ public class Block {
     @Column(name = "previous_hash")
     private String previousHash;
 
-    public Block() {
-    }
 
     public Block(String previousHash) throws NoSuchAlgorithmException {
         timeStamp = new Date().getTime();

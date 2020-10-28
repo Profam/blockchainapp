@@ -1,7 +1,7 @@
 package by.rabtsevich.service;
 
 import by.rabtsevich.pojo.Block;
-import by.rabtsevich.repo.BlockRepository;
+import by.rabtsevich.repository.BlockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
