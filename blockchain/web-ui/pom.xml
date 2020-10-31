@@ -12,6 +12,7 @@
 
     <artifactId>web-ui</artifactId>
     <version>${project.parent.version}</version>
+    <name>web-ui</name>
     <packaging>war</packaging>
 
     <properties>

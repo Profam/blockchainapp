@@ -27,5 +27,15 @@
             primary key (id)
             );
         </sql>
+        <sql>
+            CREATE TABLE `wallet` (
+            `walletId` varchar(255) NOT NULL,
+            `secretKey` varchar(255) NOT NULL,
+            `walletName` varchar(255) NULL,
+            `walletOwner` varchar(255) NULL,
+            constraint wallet_pk
+            primary key (walletId)
+            );
+        </sql>
     </changeSet>
 </databaseChangeLog>

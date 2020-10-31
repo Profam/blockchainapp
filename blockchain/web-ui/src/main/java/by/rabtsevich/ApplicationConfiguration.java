@@ -2,6 +2,7 @@ package by.rabtsevich;
 
 import by.rabtsevich.pojo.AppRole;
 import by.rabtsevich.pojo.AppUser;
+import by.rabtsevich.pojo.Wallet;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
@@ -47,7 +48,7 @@ public class ApplicationConfiguration implements WebMvcConfigurer {
     public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setAnnotatedClasses(AppUser.class, AppRole.class);
+        sessionFactory.setAnnotatedClasses(AppUser.class, AppRole.class, Wallet.class);
         sessionFactory.setHibernateProperties(getHibernateProperties());
         return sessionFactory;
     }

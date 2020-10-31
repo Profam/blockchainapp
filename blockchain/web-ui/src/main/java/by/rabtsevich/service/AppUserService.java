@@ -1,11 +1,12 @@
 package by.rabtsevich.service;
 
 import by.rabtsevich.pojo.AppUser;
-import by.rabtsevich.repository.GenericDao;
+import by.rabtsevich.repository.AppUserDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +18,7 @@ public class AppUserService {
 
     @Autowired
     @Value("#{appUserRepository}")
-    GenericDao<AppUser> appUserRepository;
+    AppUserDao<AppUser> appUserRepository;
 
     @Autowired
     PasswordEncoder passwordEncoder;
@@ -35,5 +36,10 @@ public class AppUserService {
     @Transactional
     public AppUser findByUserName(String username) {
         return appUserRepository.find(username);
+    }
+
+    @Transactional
+    public static String getAuthenticationUserUserName() {
+        return SecurityContextHolder.getContext().getAuthentication().getName();
     }
 }

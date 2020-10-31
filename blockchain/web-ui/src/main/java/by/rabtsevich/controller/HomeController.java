@@ -14,8 +14,6 @@ public class HomeController {
     @GetMapping(value = "/home.html")
     public ModelAndView homePage(ModelAndView modelAndView) {
         log.info("Call homePage");
-
-        modelAndView.addObject("greeting", "I love Spring and Summer!");
         modelAndView.setViewName("home"); // -> /WEB-INF/jsp/ + home + .jsp
 
         return modelAndView;

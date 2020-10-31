@@ -1,0 +1,43 @@
+package by.rabtsevich.controller;
+
+import by.rabtsevich.pojo.Wallet;
+import by.rabtsevich.service.WalletService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/new-wallet.html")
+public class NewWalletController {
+
+    private static final Logger log = LoggerFactory.getLogger(NewWalletController.class);
+
+    @Autowired
+    WalletService walletService;
+
+    @GetMapping
+    public String showNewWallet() {
+        return "new-wallet";
+    }
+
+    @PostMapping
+    public String createNewWallet(
+            @ModelAttribute Wallet wallet,
+            Model model
+    ) {
+        log.info("New wallet: {}", wallet);
+        if (walletService.createNewWallet(wallet)) {
+            return "redirect:home.html";
+        } else {
+            model.addAttribute("errorMessage", "Cannot create a new wallet");
+            return "error-page";
+        }
+    }
+
+}
