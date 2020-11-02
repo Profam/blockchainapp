@@ -11,20 +11,25 @@
             <th scope="col">Wallet name</th>
             <th scope="col">secret key</th>
             <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
         </thead>
         <tbody>
         <c:forEach items="${wallets}" var="wallet">
             <tr>
-                <th scope="row">${wallet.walletId}</th>
+                <td><p><a href="/web-ui/${wallet.walletId}/wallet-details.html"
+                          class="text-primary">${wallet.walletId}</a></p></td>
                 <td>${wallet.walletName}</td>
                 <td>${wallet.secretKey}</td>
-            </tr>
-            <tr>
-                <td><p><a href="/web-ui/${wallet.walletId}/wallet-details.html"
-                          class="text-primary">${wallet.walletId}</a></p>
+                <td><p><a href="/web-ui/wallet-list/${wallet.walletId}/transaction-list.html"
+                          class="btn btn-primary btn-sm" role="button" aria-pressed="true">history</a></p>
                 <td>
-                <td>${wallet.walletOwner}</td>
+                <td>${balance}</td>
+                <td><p><a href="/web-ui/wallet-list/${wallet.walletId}/new-transaction.html"
+                          class="btn btn-primary btn-sm" role="button" aria-pressed="true">send funds</a></p>
+                <td>
             </tr>
         </c:forEach>
         </tbody>

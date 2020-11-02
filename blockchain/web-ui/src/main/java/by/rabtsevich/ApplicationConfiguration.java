@@ -2,6 +2,7 @@ package by.rabtsevich;
 
 import by.rabtsevich.pojo.AppRole;
 import by.rabtsevich.pojo.AppUser;
+import by.rabtsevich.pojo.Transaction;
 import by.rabtsevich.pojo.Wallet;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.hibernate.SessionFactory;
@@ -12,6 +13,7 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -34,6 +36,11 @@ public class ApplicationConfiguration implements WebMvcConfigurer {
         return resolver;
     }
 
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
+    }
+
     @Bean
     public DataSource dataSource() {
         BasicDataSource dataSource = new org.apache.commons.dbcp.BasicDataSource();
@@ -48,7 +55,7 @@ public class ApplicationConfiguration implements WebMvcConfigurer {
     public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
-        sessionFactory.setAnnotatedClasses(AppUser.class, AppRole.class, Wallet.class);
+        sessionFactory.setAnnotatedClasses(AppUser.class, AppRole.class, Wallet.class, Transaction.class);
         sessionFactory.setHibernateProperties(getHibernateProperties());
         return sessionFactory;
     }

@@ -37,5 +37,15 @@
             primary key (walletId)
             );
         </sql>
+        <sql>
+            CREATE TABLE `transaction` (
+            `id` varchar(255) NOT NULL,
+            `walletId` varchar(255) NOT NULL,
+            `receiverId` varchar(255) NOT NULL,
+            `walletOwner` varchar(255) NOT NULL,
+            constraint transaction_pk
+            primary key (id)
+            );
+        </sql>
     </changeSet>
 </databaseChangeLog>
