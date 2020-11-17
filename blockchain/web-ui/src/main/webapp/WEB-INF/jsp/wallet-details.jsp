@@ -9,6 +9,7 @@
     <tr>
         <th scope="col">Wallet ID</th>
         <th scope="col">Wallet Name</th>
+        <th scope="col">Balance</th>
         <sec:authorize access="hasRole('USER')">
             <th scope="col">Secret key</th>
         </sec:authorize>
@@ -18,6 +19,7 @@
     <tr>
         <td>${wallet.walletId}</td>
         <td>${wallet.walletName}</td>
+        <td>${wallet.balance}</td>
         <sec:authorize access="hasRole('USER')">
             <td>${wallet.secretKey}</td>
         </sec:authorize>

@@ -1,5 +1,6 @@
 package by.rabtsevich.util;
 
+import by.rabtsevich.pojo.Block;
 import lombok.SneakyThrows;
 
 import java.security.MessageDigest;
@@ -11,17 +12,19 @@ import java.util.Base64;
 public class HashUtil {
 
     @SneakyThrows
-    public static String generate(String s) throws NoSuchAlgorithmException {
+    public static String generate(Block block) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
+        String s = (block.getTimeStamp() + block.getPreviousHash());
         md.update(s.getBytes());
         byte[] digest = md.digest();
         return new String(Base64.getEncoder().encode(digest));
     }
-
+/*
     public boolean verify(String s, String hash) throws NoSuchAlgorithmException {
         String oldHash = generate(s);
         return hash.equals(oldHash);
     }
+    */
 /*
     //Short hand helper to turn Object into a json string
     public static String getJson(Object o) {

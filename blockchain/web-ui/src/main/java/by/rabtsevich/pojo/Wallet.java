@@ -28,4 +28,6 @@ public class Wallet {
     private String walletName;
 
     private String walletOwner;
+
+    private int balance;
 }

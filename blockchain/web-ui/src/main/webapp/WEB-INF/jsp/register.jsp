@@ -1,3 +1,4 @@
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <jsp:include page="header.jsp"/>
 <div class="container">
     <form class="form-signin" method="post" action="/web-ui/register">
@@ -16,7 +17,10 @@
             <label for="role" class="sr-only">Please select role</label>
             <select class="form-control" name="roles[0].roleName" id="role">
                 <option>USER</option>
-                <option>ADMIN</option>
+                <sec:authorize access="hasRole('ADMIN')">
+                    <option>ADMIN</option>
+                </sec:authorize>
+
             </select>
         </p>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>

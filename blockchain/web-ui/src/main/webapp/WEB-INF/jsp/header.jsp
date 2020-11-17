@@ -31,7 +31,13 @@
                     <a class="nav-link" href="/web-ui/register">Register</a>
                 </li>
             </sec:authorize>
+            <sec:authorize access="hasRole('ADMIN')">
+                <li class="nav-item">
+                    <a class="nav-link" href="/web-ui/register">Register</a>
+                </li>
+            </sec:authorize>
             <sec:authorize access="isAuthenticated()">
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown"

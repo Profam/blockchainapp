@@ -9,11 +9,14 @@
     <changeSet author="profamsoft@gmail.com" id="1.0">
         <sql>
             CREATE TABLE `blocks` (
-            `time_stamp` bigint NOT NULL,
+            `id` bigint NOT NULL,
+            `timeStamp` bigint NOT NULL,
+            `previousHash` varchar(255) NOT NULL,
             `hash` varchar(255) NOT NULL,
-            `previous_hash` varchar(255) NOT NULL,
+            `transaction` varchar(255) NOT NULL,
+            `nonce` varchar(255) NOT NULL,
             constraint blocks_pk
-            primary key (time_stamp)
+            primary key (id)
             );
         </sql>
         <sql>
@@ -41,11 +44,49 @@
             CREATE TABLE `transaction` (
             `id` varchar(255) NOT NULL,
             `walletId` varchar(255) NOT NULL,
-            `receiverId` varchar(255) NOT NULL,
-            `walletOwner` varchar(255) NOT NULL,
+            `receiverWalletId` varchar(255) NOT NULL,
+            `senderSecretKey` varchar(255) NOT NULL,
+            `value` varchar(255) NOT NULL,
+            `transactionStatus` varchar(255) NOT NULL,
             constraint transaction_pk
             primary key (id)
             );
+        </sql>
+        <sql>
+            CREATE TABLE `approle` (
+            `id` varchar(255) NOT NULL,
+            `roleName` varchar(255) NOT NULL,
+            constraint approle_pk
+            primary key (id)
+            );
+        </sql>
+        <sql>
+            CREATE TABLE `user_approle` (
+            `AppUser_id` varchar(255) NOT NULL,
+            `roles_id` varchar(255) NOT NULL,
+            foreign key(AppUser_id) references user(id),
+            foreign key(roles_id) references approle(id)
+            );
+
+
+        </sql>
+        <sql>
+            insert into blocks (id, timeStamp, previousHash, hash, transaction, nonce)
+            values(0,1604412869571,'0','s2ER9nw6uTP7ikRqB2XnlQ==',
+            'The Times 26 Oct 2020, Chancellor on Brink of Second Bailout for Banks.', 0);
+
+            insert into user (id, userName, userPassword, email, mobileNumber)
+            values('08c83f6d-72a4-4d87-99d8-5d10386d7594', 'admin',
+            '$2a$10$gibCyepn53Rs8qHTR8n7S.CFLJV0jWnTErN7T4YkaSmqWA1.meClC', 'profamsoft@gmail.com', '+375291544038');
+
+            insert into transaction (id, walletId, receiverWalletId, senderSecretKey, value, transactionStatus)
+            values('0', '0', '0', '0', '50', 'genesis');
+
+            insert into approle (id, roleName)
+            values('9a2a6cd8-a0d3-42cc-9180-8e73e633423b', 'ADMIN');
+
+            insert into user_approle (AppUser_id, roles_id)
+            values('08c83f6d-72a4-4d87-99d8-5d10386d7594', '9a2a6cd8-a0d3-42cc-9180-8e73e633423b');
         </sql>
     </changeSet>
 </databaseChangeLog>

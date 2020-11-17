@@ -6,6 +6,8 @@ import by.rabtsevich.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -27,5 +29,10 @@ public class WalletListController {
         modelAndView.setViewName("wallet-list");
         modelAndView.addObject("wallets", wallets);
         return modelAndView;
+    }
+
+    @PostMapping("localhost:8081/mine/${wallet.walletId}")
+    public String mine(@PathVariable String walletId) {
+        return "wallet-list";
     }
 }

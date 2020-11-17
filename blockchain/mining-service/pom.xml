@@ -44,8 +44,9 @@
             <version>1.18.12</version>
         </dependency>
     </dependencies>
-    <build>
 
+    <build>
+        <finalName>mining-service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

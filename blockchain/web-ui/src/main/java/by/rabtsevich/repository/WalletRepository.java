@@ -23,6 +23,13 @@ public class WalletRepository implements WalletDao<Wallet> {
                 .saveOrUpdate(wallet);
     }
 
+    @Override
+    @Transactional
+    public void update(Wallet wallet) {
+        sessionFactory.getCurrentSession()
+                .update(wallet);
+    }
+
 
     @Transactional(propagation = Propagation.REQUIRED, readOnly = true)
     public Wallet find(String walletId) {

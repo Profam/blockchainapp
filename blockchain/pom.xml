@@ -36,6 +36,11 @@
                 <artifactId>mining-service</artifactId>
                 <version>${project.parent.version}</version>
             </dependency>
+            <dependency>
+                <groupId>by.rabtsevich</groupId>
+                <artifactId>web-ui</artifactId>
+                <version>${project.parent.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>

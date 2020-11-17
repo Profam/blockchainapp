@@ -23,6 +23,7 @@ public class WalletController {
             @PathVariable String walletId,
             ModelAndView modelAndView
     ) {
+        log.info("show walletId {}", walletId);
         Wallet wallet = walletService.get(walletId);
         modelAndView.setViewName("wallet-details");
         modelAndView.addObject("wallet", wallet);

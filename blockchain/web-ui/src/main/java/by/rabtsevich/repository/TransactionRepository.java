@@ -24,6 +24,13 @@ public class TransactionRepository implements TransactionDao<Transaction> {
     }
 
     @Override
+    @Transactional
+    public void update(Transaction transaction) {
+        sessionFactory.getCurrentSession()
+                .update(transaction);
+    }
+
+    @Override
     @Transactional(propagation = Propagation.REQUIRED, readOnly = true)
     public Transaction find(String id) {
         return sessionFactory
@@ -48,11 +55,11 @@ public class TransactionRepository implements TransactionDao<Transaction> {
 
     @Override
     @Transactional(readOnly = true)
-    public List<Transaction> findAllTransactionsByReceiverId(String receiverId) {
+    public List<Transaction> findAllTransactionsByReceiverId(String receiverWalletId) {
         return sessionFactory
                 .getCurrentSession()
-                .createQuery("from Transaction t where t.receiverId like :receiverId", Transaction.class)
-                .setParameter("receiverId", receiverId)
+                .createQuery("from Transaction t where t.receiverWalletId like :receiverWalletId", Transaction.class)
+                .setParameter("receiverWalletId", receiverWalletId)
                 .list();
     }
 }

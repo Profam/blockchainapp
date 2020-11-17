@@ -38,18 +38,18 @@ public class WalletService {
     }
 
     public long getBalance(String walletId) {
-        long outcomeBalance = 0;
-        long incomeBalance = 0;
+        long senderBalance = 0;
+        long receiverBalance = 0;
 
         //sended from wallet
         for (Transaction t : transactionService.getAllTransactionsBySenderWalletId(walletId)) {
-            outcomeBalance += t.getValue();
+            senderBalance += t.getValue();
         }
         //received by wallet
         for (Transaction t : transactionService.getAllTransactionsByReceiverId(walletId)) {
-            incomeBalance += t.getValue();
+            receiverBalance += t.getValue();
         }
-        return incomeBalance - outcomeBalance;
+        return receiverBalance - senderBalance;
     }
 
     public List<Wallet> getAll(String walletOwner) {
@@ -59,4 +59,9 @@ public class WalletService {
     public Wallet get(String walletId) {
         return walletRepository.find(walletId);
     }
+
+    public void update(Wallet wallet) {
+        walletRepository.update(wallet);
+    }
+
 }

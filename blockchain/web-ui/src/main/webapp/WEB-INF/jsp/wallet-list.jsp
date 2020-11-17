@@ -9,8 +9,6 @@
         <tr>
             <th scope="col">Wallet ID</th>
             <th scope="col">Wallet name</th>
-            <th scope="col">secret key</th>
-            <th scope="col"></th>
             <th scope="col"></th>
             <th scope="col"></th>
             <th scope="col"></th>
@@ -19,17 +17,24 @@
         <tbody>
         <c:forEach items="${wallets}" var="wallet">
             <tr>
-                <td><p><a href="/web-ui/${wallet.walletId}/wallet-details.html"
-                          class="text-primary">${wallet.walletId}</a></p></td>
-                <td>${wallet.walletName}</td>
-                <td>${wallet.secretKey}</td>
-                <td><p><a href="/web-ui/wallet-list/${wallet.walletId}/transaction-list.html"
-                          class="btn btn-primary btn-sm" role="button" aria-pressed="true">history</a></p>
                 <td>
-                <td>${balance}</td>
+                    <p><a href="/web-ui/${wallet.walletId}/wallet-details.html"
+                          class="text-primary">${wallet.walletId}</a></p>
+                </td>
+                <td>
+                        ${wallet.walletName}
+                </td>
+                <td>
+                    <p><a href="/web-ui/wallet-list/${wallet.walletId}/transaction-list.html"
+                          class="btn btn-primary btn-sm" role="button" aria-pressed="true">history</a></p>
+                </td>
                 <td><p><a href="/web-ui/wallet-list/${wallet.walletId}/new-transaction.html"
                           class="btn btn-primary btn-sm" role="button" aria-pressed="true">send funds</a></p>
+                </td>
                 <td>
+                    <p><a href="http://localhost:8081/mine/${wallet.walletId}" class="btn btn-primary btn-sm"
+                          role="button" aria-pressed="true">mine</a></p>
+                </td>
             </tr>
         </c:forEach>
         </tbody>

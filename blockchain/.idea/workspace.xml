@@ -16,33 +16,41 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f8354d7-6a85-44fd-b76b-c682ec89086d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewWalletController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/AppUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/WalletService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/error-page.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/new-wallet.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-details.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-list.jsp" afterDir="false" />
+    <list default="true" id="5f8354d7-6a85-44fd-b76b-c682ec89086d" name="Default Changelist" comment="Add Wallets, fix frontend">
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/MiningService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/ValidUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/WalletUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/controller/BlockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/controller/MiningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/BlockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/BlockRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/BlockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/BlockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/HashUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/HashUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/resources/changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/resources/changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/ApplicationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/AppUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/AppUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/GenericDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/AppUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewTransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewTransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/TransactionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/TransactionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/WalletService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/new-transaction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/new-transaction.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/transaction-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/transaction-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +60,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,44 +78,60 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/blockchainproj-main" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/M-JD2-71-20-master/M-JD2-71-20-master/hello-spring" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32873562" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src" />
-      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp\WEB-INF\jsp\images" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp\resources" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp\WEB-INF\resources\images" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="by.rabtsevich.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\resources" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\java\by\rabtsevich\pojo" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\java\by\rabtsevich\security" />
+      <recent name="C:\Users\golda\IdeaProjects\blockchain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="by.rabtsevich.pojo" />
+      <recent name="by.rabtsevich.repository" />
+      <recent name="by.rabtsevich.controller" />
+      <recent name="by.rabtsevich.service" />
+      <recent name="by.rabtsevich.repo" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="by.rabtsevich.web" />
       <recent name="main.java.by.rabtsevich.web" />
     </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="by.rabtsevich.service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="by.rabtsevich.repository" />
-      <recent name="by.rabtsevich.controller" />
-      <recent name="by.rabtsevich.service" />
-      <recent name="by.rabtsevich.repo" />
-      <recent name="by.rabtsevich.pojo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\webapp\WEB-INF\jsp" />
-      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\java\by\rabtsevich\pojo" />
-      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui\src\main\java\by\rabtsevich\security" />
-      <recent name="C:\Users\golda\IdeaProjects\blockchain" />
-      <recent name="C:\Users\golda\IdeaProjects\blockchain\web-ui" />
-    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.rabtsevich.Main" />
+      <module name="mining-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.rabtsevich.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApplicationConfiguration" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mining-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="by.rabtsevich.ApplicationConfiguration" />
@@ -114,6 +139,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -125,7 +155,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603536706347</updated>
-      <workItem from="1603536713067" duration="73643000" />
+      <workItem from="1603536713067" duration="85606000" />
+      <workItem from="1604315615096" duration="57985000" />
+      <workItem from="1605262417665" duration="42090000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit: mvp project">
       <created>1603720609776</created>
@@ -141,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603878679779</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add Wallets, fix frontend">
+      <created>1604167601663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604167601663</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Transaction, fix frontend">
+      <created>1604329349106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604329349106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,25 +198,40 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit: mvp project(simple mining, db, home page in frontend)" />
     <MESSAGE value="Init commit: mvp project" />
     <MESSAGE value="Add registration, login, auth service, security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add registration, login, auth service, security" />
+    <MESSAGE value="Add Wallets, fix frontend" />
+    <MESSAGE value="Add Transaction, fix frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Transaction, fix frontend" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="418" y="324" width="589" height="216" key="#Assign_Data_Sources" timestamp="1603805059410">
+    <state x="418" y="324" width="589" height="216" key="#Assign_Data_Sources" timestamp="1604496248317">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="418" y="324" width="589" height="216" key="#Assign_Data_Sources/0.0.2048.1112@0.0.2048.1112" timestamp="1603805059410" />
+    <state x="418" y="324" width="589" height="216" key="#Assign_Data_Sources/0.0.2048.1112@0.0.2048.1112" timestamp="1604496248317" />
     <state x="651" y="235" key="#Inspections" timestamp="1603700837609">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -179,26 +240,30 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="0" y="131" key="#Project_Structure/0.0.2048.1112@0.0.2048.1112" timestamp="1603876155576" />
+    <state x="57" y="393" key="#Template_Data_Languages" timestamp="1604172883624">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="57" y="393" key="#Template_Data_Languages/0.0.2048.1112@0.0.2048.1112" timestamp="1604172883624" />
     <state x="243" y="314" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1603804965266">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="243" y="314" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603804965266" />
-    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604165714610">
+    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605262448889">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1604165714610" />
-    <state x="318" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1604165207008">
+    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605262448889" />
+    <state x="318" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1604484770728">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="318" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1604165207008" />
+    <state x="318" y="266" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112@0.0.2048.1112" timestamp="1604484770728" />
     <state x="143" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1603701589261">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="143" y="245" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603701589261" />
-    <state x="883" y="776" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603803629344">
+    <state x="883" y="776" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604418184399">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="883" y="776" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603803629344" />
+    <state x="883" y="776" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1604418184399" />
     <state x="1319" y="425" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603806830184">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -207,46 +272,58 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="226" y="90" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1603804823132" />
-    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604166554494">
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605354328848">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1604166554494" />
-    <state x="610" y="125" key="CommitChangelistDialog2" timestamp="1603878678605">
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605354328848" />
+    <state x="610" y="125" key="CommitChangelistDialog2" timestamp="1604329348042">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="610" y="125" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1603878678605" />
-    <state x="293" y="311" key="FileChooserDialogImpl" timestamp="1604160912293">
+    <state x="610" y="125" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1604329348042" />
+    <state x="293" y="311" key="FileChooserDialogImpl" timestamp="1605367462240">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="293" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1604160912293" />
-    <state width="979" height="333" key="GridCell.Tab.0.bottom" timestamp="1604167262290">
+    <state x="293" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1605367462240" />
+    <state width="2005" height="316" key="GridCell.Tab.0.bottom" timestamp="1605633958451">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="333" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1604167262290" />
-    <state width="979" height="333" key="GridCell.Tab.0.center" timestamp="1604167262290">
+    <state width="2005" height="316" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1605633958451" />
+    <state width="2005" height="316" key="GridCell.Tab.0.center" timestamp="1605633958451">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="333" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1604167262290" />
-    <state width="979" height="333" key="GridCell.Tab.0.left" timestamp="1604167262290">
+    <state width="2005" height="316" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1605633958451" />
+    <state width="2005" height="316" key="GridCell.Tab.0.left" timestamp="1605633958451">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="333" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1604167262290" />
-    <state width="979" height="333" key="GridCell.Tab.0.right" timestamp="1604167262290">
+    <state width="2005" height="316" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1605633958451" />
+    <state width="2005" height="316" key="GridCell.Tab.0.right" timestamp="1605633958451">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="979" height="333" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1604167262290" />
-    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1604164274839">
+    <state width="2005" height="316" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1605633958451" />
+    <state x="533" y="201" key="SettingsEditor" timestamp="1604418996149">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2048.1112@0.0.2048.1112" timestamp="1604164274839" />
-    <state x="169" y="262" width="672" height="677" key="run.anything.popup" timestamp="1603876495402">
+    <state x="533" y="201" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1604418996149" />
+    <state x="746" y="298" width="540" height="524" key="StructurePopup" timestamp="1604419019040">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="169" y="262" width="672" height="677" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1603876495402" />
-    <state x="174" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1603970519256">
+    <state x="746" y="298" width="540" height="524" key="StructurePopup/0.0.2048.1112@0.0.2048.1112" timestamp="1604419019040" />
+    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1604498017318">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="174" y="248" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1603970519256" />
+    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2048.1112@0.0.2048.1112" timestamp="1604498017318" />
+    <state x="0" y="181" key="new project wizard" timestamp="1604412816290">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="0" y="181" key="new project wizard/0.0.2048.1112@0.0.2048.1112" timestamp="1604412816290" />
+    <state x="169" y="262" width="672" height="677" key="run.anything.popup" timestamp="1604479094674">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="169" y="262" width="672" height="677" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1604479094674" />
+    <state x="174" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1604494741015">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="174" y="248" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1604494741015" />
     <state x="157" y="242" key="spring file set editor" timestamp="1603700563480">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
