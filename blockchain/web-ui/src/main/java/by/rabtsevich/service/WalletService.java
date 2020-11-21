@@ -1,6 +1,5 @@
 package by.rabtsevich.service;
 
-import by.rabtsevich.pojo.Transaction;
 import by.rabtsevich.pojo.Wallet;
 import by.rabtsevich.repository.WalletDao;
 import org.slf4j.Logger;
@@ -35,21 +34,6 @@ public class WalletService {
                         AppUserService.getAuthenticationUserUserName()).getId());
         walletRepository.create(wallet);
         return true;
-    }
-
-    public long getBalance(String walletId) {
-        long senderBalance = 0;
-        long receiverBalance = 0;
-
-        //sended from wallet
-        for (Transaction t : transactionService.getAllTransactionsBySenderWalletId(walletId)) {
-            senderBalance += t.getValue();
-        }
-        //received by wallet
-        for (Transaction t : transactionService.getAllTransactionsByReceiverId(walletId)) {
-            receiverBalance += t.getValue();
-        }
-        return receiverBalance - senderBalance;
     }
 
     public List<Wallet> getAll(String walletOwner) {

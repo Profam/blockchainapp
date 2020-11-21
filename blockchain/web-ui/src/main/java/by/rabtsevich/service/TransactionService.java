@@ -37,7 +37,7 @@ public class TransactionService {
     public boolean validateTransaction(Transaction transaction, String walletId, String secretKey, String receiverWalletId) {
         return ((walletService.get(transaction.getWalletId()).getBalance() >= transaction.getValue())
                 && (walletService.get(walletId).getSecretKey().equals(secretKey)))
-                && (walletService.get(receiverWalletId).getWalletId().equals(receiverWalletId));
+                || (walletService.get(receiverWalletId).getWalletId().equals(receiverWalletId));
     }
 
     public boolean verifySecretkey(Transaction transaction, String secretKey) {

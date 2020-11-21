@@ -39,4 +39,5 @@
         </c:forEach>
         </tbody>
     </table>
+</form>
 <jsp:include page="footer.jsp"/>

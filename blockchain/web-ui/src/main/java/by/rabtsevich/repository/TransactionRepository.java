@@ -58,8 +58,8 @@ public class TransactionRepository implements TransactionDao<Transaction> {
     public List<Transaction> findAllTransactionsByReceiverId(String receiverWalletId) {
         return sessionFactory
                 .getCurrentSession()
-                .createQuery("from Transaction t where t.receiverWalletId like :receiverWalletId", Transaction.class)
-                .setParameter("receiverWalletId", receiverWalletId)
+                .createQuery("from Transaction t where t.receiverWalletId like :receiver_wallet_id", Transaction.class)
+                .setParameter("receiver_wallet_id", receiverWalletId)
                 .list();
     }
 }

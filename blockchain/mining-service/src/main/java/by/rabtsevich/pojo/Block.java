@@ -17,19 +17,21 @@ import javax.persistence.Table;
 public class Block {
 
     @Id
-    @Column(name = "blockId")
+    @Column(name = "id")
     private long blockId;
-    @Column(name = "timeStamp")
+    @Column(name = "time_stamp")
     private long timeStamp;
 
-    @Column(name = "previousHash")
+    @Column(name = "previous_hash")
     private String previousHash;
 
     @Column(name = "hash")
     private String hash;
 
-    private String transaction;
+    @Column(name = "transaction")
+    private String hashOfTransactionList;
 
+    @Column(name = "nonce")
     private int nonce;
 }
 

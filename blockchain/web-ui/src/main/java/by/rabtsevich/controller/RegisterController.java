@@ -24,7 +24,7 @@ public class RegisterController {
     @PostMapping
     public String registerNewUser(AppUser appUser) {
         appUserService.createNewUser(appUser);
-        return "redirect:home";
+        return "redirect:home.html";
     }
 
 }

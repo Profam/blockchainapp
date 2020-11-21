@@ -5,6 +5,8 @@ import by.rabtsevich.repository.TransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TransactionService {
 
@@ -19,7 +21,11 @@ public class TransactionService {
         return transactionRepository.count();
     }
 
-    public Transaction getPendingTransaction() {
-        return transactionRepository.findFirstByStatus("Pending");
+    public Transaction getAcceptedTransaction() {
+        return transactionRepository.findFirstByTransactionStatus("Accepted");
+    }
+
+    public List<Transaction> getAcceptedTransactions() {
+        return transactionRepository.findAllByTransactionStatus("Accepted");
     }
 }

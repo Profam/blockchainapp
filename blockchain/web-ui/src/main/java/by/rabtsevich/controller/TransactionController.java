@@ -32,7 +32,7 @@ public class TransactionController {
     }
 
     @PostMapping
-    public String acceptNewTransaction(
+    public String acceptTransaction(
             @RequestParam("senderSecretKey") String secretKey,
             @RequestParam("id") String id,
             Model model) {

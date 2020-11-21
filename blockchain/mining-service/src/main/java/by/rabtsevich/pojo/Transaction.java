@@ -5,9 +5,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
-//transaction - операция по переводу одного или нескольких блоков с одного кошелька на другой
 @Data
 @Entity
 @NoArgsConstructor
@@ -17,15 +23,18 @@ public class Transaction {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
-    private String id; //Contains a hash of transaction
-    @Column(name = "walletId")
-    private String senderWalletId; //Senders address/public key.
-    @Column(name = "receiverWalletId")
+    private String id;
+    @NotBlank
+    private String walletId; //Senders address/public key.
+    @NotBlank
     private String receiverWalletId; //Recipients address/public key.
-    @Column(name = "senderSecretKey")
-    private String senderSecretkey; //Senders secret key.
-    @Column(name = "value")
+    @NotBlank
+    private String senderSecretKey; //Senders secret key.
+    @NotNull
+    @Min(1)
+    @Max(99)
     private int value; //Contains the amount we wish to send to the recipient.
-    @Column(name = "status")
+
+    //3 statuses "pending", "accepted", "genesis"
     private String transactionStatus;
 }

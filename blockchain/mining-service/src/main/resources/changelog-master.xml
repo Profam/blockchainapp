@@ -10,8 +10,8 @@
         <sql>
             CREATE TABLE `blocks` (
             `id` bigint NOT NULL,
-            `timeStamp` bigint NOT NULL,
-            `previousHash` varchar(255) NOT NULL,
+            `time_stamp` bigint NOT NULL,
+            `previous_hash` varchar(255) NOT NULL,
             `hash` varchar(255) NOT NULL,
             `transaction` varchar(255) NOT NULL,
             `nonce` varchar(255) NOT NULL,
@@ -32,22 +32,22 @@
         </sql>
         <sql>
             CREATE TABLE `wallet` (
-            `walletId` varchar(255) NOT NULL,
-            `secretKey` varchar(255) NOT NULL,
-            `walletName` varchar(255) NULL,
-            `walletOwner` varchar(255) NULL,
+            `wallet_id` varchar(255) NOT NULL,
+            `secret_key` varchar(255) NOT NULL,
+            `wallet_name` varchar(255) NULL,
+            `wallet_owner` varchar(255) NULL,
             constraint wallet_pk
-            primary key (walletId)
+            primary key (wallet_id)
             );
         </sql>
         <sql>
             CREATE TABLE `transaction` (
             `id` varchar(255) NOT NULL,
-            `walletId` varchar(255) NOT NULL,
-            `receiverWalletId` varchar(255) NOT NULL,
-            `senderSecretKey` varchar(255) NOT NULL,
+            `wallet_id` varchar(255) NOT NULL,
+            `receiver_wallet_id` varchar(255) NOT NULL,
+            `sender_secret_key` varchar(255) NOT NULL,
             `value` varchar(255) NOT NULL,
-            `transactionStatus` varchar(255) NOT NULL,
+            `transaction_status` varchar(255) NOT NULL,
             constraint transaction_pk
             primary key (id)
             );
@@ -71,15 +71,15 @@
 
         </sql>
         <sql>
-            insert into blocks (id, timeStamp, previousHash, hash, transaction, nonce)
-            values(0,1604412869571,'0','s2ER9nw6uTP7ikRqB2XnlQ==',
+            insert into blocks (id, time_stamp, previous_hash, hash, transaction, nonce)
+            values(0,1604412869571,'genesis','s2ER9nw6uTP7ikRqB2XnlQ==',
             'The Times 26 Oct 2020, Chancellor on Brink of Second Bailout for Banks.', 0);
 
             insert into user (id, userName, userPassword, email, mobileNumber)
             values('08c83f6d-72a4-4d87-99d8-5d10386d7594', 'admin',
             '$2a$10$gibCyepn53Rs8qHTR8n7S.CFLJV0jWnTErN7T4YkaSmqWA1.meClC', 'profamsoft@gmail.com', '+375291544038');
 
-            insert into transaction (id, walletId, receiverWalletId, senderSecretKey, value, transactionStatus)
+            insert into transaction (id, wallet_id, receiver_wallet_id, sender_secret_key, value, transaction_status)
             values('0', '0', '0', '0', '50', 'genesis');
 
             insert into approle (id, roleName)

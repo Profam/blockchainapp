@@ -35,8 +35,8 @@ public class WalletRepository implements WalletDao<Wallet> {
     public Wallet find(String walletId) {
         return sessionFactory
                 .getCurrentSession()
-                .createQuery("from Wallet w where w.walletId=:walletId", Wallet.class)
-                .setParameter("walletId", walletId)
+                .createQuery("from Wallet w where w.walletId=:wallet_id", Wallet.class)
+                .setParameter("wallet_id", walletId)
                 .list()
                 .stream()
                 .findFirst()
@@ -48,8 +48,8 @@ public class WalletRepository implements WalletDao<Wallet> {
     public List<Wallet> findAll(String searchStr) {
         return sessionFactory
                 .getCurrentSession()
-                .createQuery("from Wallet w where w.walletOwner=:walletOwner", Wallet.class)
-                .setParameter("walletOwner", searchStr)
+                .createQuery("from Wallet w where w.walletOwner=:wallet_owner", Wallet.class)
+                .setParameter("wallet_owner", searchStr)
                 .list();
     }
 }
