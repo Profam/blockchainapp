@@ -35,7 +35,7 @@ public class Transaction {
     @Max(99)
     @Column(name = "value")
     private int value;
-    //3 statuses "pending", "accepted", "genesis"
+    //"pending", "accepted", "genesis"
     @Column(name = "transaction_status")
     private String transactionStatus;
 }

@@ -34,7 +34,5 @@ public class Transaction {
     @Min(1)
     @Max(99)
     private int value; //Contains the amount we wish to send to the recipient.
-
-    //3 statuses "pending", "accepted", "genesis"
-    private String transactionStatus;
+    private String transactionStatus; //"pending", "accepted", "genesis"
 }

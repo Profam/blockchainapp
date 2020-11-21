@@ -21,16 +21,12 @@ public class Block {
     private long blockId;
     @Column(name = "time_stamp")
     private long timeStamp;
-
     @Column(name = "previous_hash")
     private String previousHash;
-
     @Column(name = "hash")
     private String hash;
-
     @Column(name = "transaction")
     private String hashOfTransactionList;
-
     @Column(name = "nonce")
     private int nonce;
 }

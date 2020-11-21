@@ -80,5 +80,4 @@ public class ApplicationConfiguration implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("home");
     }
-
 }

@@ -20,25 +20,29 @@ public class MiningService {
     WalletService walletService;
 
     private static final Logger log = LoggerFactory.getLogger(MiningService.class);
-
+    //change value to speed up or slow down creation and validation of blocks
     private final int difficulty = 4;
 
     public boolean mine(String walletId) throws InterruptedException, NoSuchAlgorithmException {
         log.info("start mining, walletId {}", walletId);
-        boolean flag = true;//flag - is mining running atm?
-        while (flag) {
-            Thread.sleep(5000);//to slow down
-            //creating block without nonce and hash, then we'll mine it and saving it
+        boolean isMining = true;
+        while (isMining) {
+            //change speed of creation and validation of blocks
+            Thread.sleep(5000);
+            //add valid block to blockchain
             blockService.saveNewBlock(
                     blockService.mineBlock(
                             blockService.createBlock(),
                             difficulty));
+            //wallet reward for mining, default : 1 block = 1 coin
+            short miningReward = 1;
             Wallet wallet = walletService.get(walletId);
-            wallet.setBalance(wallet.getBalance() + 1);
+            wallet.setBalance(wallet.getBalance() + miningReward);
             walletService.update(wallet);
-            flag = validationBlockService.isBlockchainValid();// if blockchain is corrupted or broken, flag set to false and mining will stop
-            log.info("blockchain is valid {}", flag);
+            // if blockchain is not valid, mining will stop
+            isMining = validationBlockService.isBlockchainValid();
+            log.info("blockchain is valid {}", isMining);
         }
-        return flag;
+        return isMining;
     }
 }

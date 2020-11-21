@@ -23,33 +23,28 @@ public class TransactionService {
 
     private static final Logger log = LoggerFactory.getLogger(TransactionService.class);
 
-    public boolean createNewTransaction(String walletId, Transaction transaction) {
+    public void createNewTransaction(String walletId, Transaction transaction) {
         log.info("creating transaction in TransactionService {}", transaction);
         transaction.setWalletId(walletId);
         transaction.setTransactionStatus("Pending");
-        if (transactionRepository.find(transaction.getId()) != null) {
-            return false;
-        }
         transactionRepository.create(transaction);
-        return true;
     }
 
+    //check wallet balance, valid secretkey, existence of receiver wallet id
     public boolean validateTransaction(Transaction transaction, String walletId, String secretKey, String receiverWalletId) {
         return ((walletService.get(transaction.getWalletId()).getBalance() >= transaction.getValue())
                 && (walletService.get(walletId).getSecretKey().equals(secretKey)))
                 || (walletService.get(receiverWalletId).getWalletId().equals(receiverWalletId));
     }
 
+    //receiver has secret key?
     public boolean verifySecretkey(Transaction transaction, String secretKey) {
         return transaction.getSenderSecretKey().equals(secretKey);
     }
 
 
-    public boolean transferBalanceFromWalletToWallet(Transaction transaction) {
+    public void transferBalanceFromWalletToWallet(Transaction transaction) {
         log.info("transfer balance from wallet to wallet {}", transaction);
-        /*if (transactionRepository.find(transaction.getId()) == null) {
-            return false;
-        }*/
         Wallet walletSender = walletService.get(transaction.getWalletId());
         walletSender.setBalance(walletSender.getBalance() - transaction.getValue());
         walletService.update(walletSender);
@@ -60,7 +55,6 @@ public class TransactionService {
 
         transaction.setTransactionStatus("Accepted");
         transactionRepository.update(transaction);
-        return true;
     }
 
     public Transaction getTransaction(String id) {
@@ -80,7 +74,6 @@ public class TransactionService {
         log.info("size of list of received transactions {}", allTransactions.size());
         allTransactions.addAll(getAllTransactionsBySenderWalletId(walletId));
         log.info("size of lsit of received transactions plus sended transactions {}", allTransactions.size());
-
         return allTransactions;
     }
 }

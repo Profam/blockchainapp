@@ -15,7 +15,6 @@ public class HomeController {
     public ModelAndView homePage(ModelAndView modelAndView) {
         log.info("Call homePage");
         modelAndView.setViewName("home"); // -> /WEB-INF/jsp/ + home + .jsp
-
         return modelAndView;
     }
 }

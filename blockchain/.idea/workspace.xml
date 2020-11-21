@@ -17,31 +17,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f8354d7-6a85-44fd-b76b-c682ec89086d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Wallet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/WalletRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/WalletService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/Block.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/notes.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/ApplicationConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/pojo/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/BlockRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/BlockRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/repository/TransactionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/BlockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/BlockService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/MiningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/MiningService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/TransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/ValidationBlockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/ValidationBlockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/WalletService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/HashUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/HashUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/util/ValidUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/java/by/rabtsevich/service/ValidationBlockService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mining-service/src/main/resources/changelog-master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mining-service/src/main/resources/changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/ApplicationConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewTransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewTransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewWalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/NewWalletController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/RegisterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/TransactionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/controller/WalletListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/AppRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/AppRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/AppUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/pojo/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/AppUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/AppUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/repository/WalletRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/security/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/security/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/AppUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/WalletService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/java/by/rabtsevich/service/WalletService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web-ui/src/main/webapp/WEB-INF/jsp/wallet-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +158,7 @@
       <workItem from="1603536713067" duration="85606000" />
       <workItem from="1604315615096" duration="57985000" />
       <workItem from="1605262417665" duration="46590000" />
-      <workItem from="1605795264573" duration="27344000" />
+      <workItem from="1605795264573" duration="32342000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit: mvp project">
       <created>1603720609776</created>
@@ -190,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605634312806</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix MiningService, add validation">
+      <created>1605952728096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605952728096</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +239,8 @@
     <MESSAGE value="Add Wallets, fix frontend" />
     <MESSAGE value="Add Transaction, fix frontend" />
     <MESSAGE value="Fix MiningService, webui, add balance transfer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix MiningService, webui, add balance transfer" />
+    <MESSAGE value="Fix MiningService, add validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix MiningService, add validation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -276,50 +289,50 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="226" y="34" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605879358910" />
-    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605879515982">
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605955046055">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605879515982" />
-    <state x="610" y="125" key="CommitChangelistDialog2" timestamp="1605634311432">
+    <state x="755" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605955046055" />
+    <state x="610" y="125" key="CommitChangelistDialog2" timestamp="1605952726749">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="610" y="125" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1605634311432" />
+    <state x="610" y="125" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1605952726749" />
     <state x="293" y="311" key="FileChooserDialogImpl" timestamp="1605367462240">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="293" y="311" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1605367462240" />
-    <state width="2005" height="283" key="GridCell.Tab.0.bottom" timestamp="1605898564957">
+    <state width="2005" height="283" key="GridCell.Tab.0.bottom" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564957" />
-    <state width="2005" height="283" key="GridCell.Tab.0.center" timestamp="1605898564957">
+    <state width="2005" height="283" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
+    <state width="2005" height="283" key="GridCell.Tab.0.center" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564957" />
-    <state width="2005" height="283" key="GridCell.Tab.0.left" timestamp="1605898564957">
+    <state width="2005" height="283" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
+    <state width="2005" height="283" key="GridCell.Tab.0.left" timestamp="1605957261653">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564957" />
-    <state width="2005" height="283" key="GridCell.Tab.0.right" timestamp="1605898564957">
+    <state width="2005" height="283" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261653" />
+    <state width="2005" height="283" key="GridCell.Tab.0.right" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564957" />
-    <state width="2005" height="283" key="GridCell.Tab.1.bottom" timestamp="1605898564955">
+    <state width="2005" height="283" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
+    <state width="2005" height="283" key="GridCell.Tab.1.bottom" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564955" />
-    <state width="2005" height="283" key="GridCell.Tab.1.center" timestamp="1605898564955">
+    <state width="2005" height="283" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
+    <state width="2005" height="283" key="GridCell.Tab.1.center" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564955" />
-    <state width="2005" height="283" key="GridCell.Tab.1.left" timestamp="1605898564955">
+    <state width="2005" height="283" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
+    <state width="2005" height="283" key="GridCell.Tab.1.left" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564955" />
-    <state width="2005" height="283" key="GridCell.Tab.1.right" timestamp="1605898564955">
+    <state width="2005" height="283" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
+    <state width="2005" height="283" key="GridCell.Tab.1.right" timestamp="1605957261654">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="283" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1605898564955" />
+    <state width="2005" height="283" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1605957261654" />
     <state x="533" y="201" key="SettingsEditor" timestamp="1604418996149">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -328,10 +341,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="746" y="298" width="540" height="524" key="StructurePopup/0.0.2048.1112@0.0.2048.1112" timestamp="1604419019040" />
-    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605898482059">
+    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1605957054166">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2048.1112@0.0.2048.1112" timestamp="1605898482059" />
+    <state x="915" y="423" width="312" height="266" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2048.1112@0.0.2048.1112" timestamp="1605957054166" />
+    <state x="890" y="294" width="684" height="523" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605957041736">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="890" y="294" width="684" height="523" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1605957041736" />
     <state x="0" y="181" key="new project wizard" timestamp="1604412816290">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

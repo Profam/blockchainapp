@@ -29,8 +29,7 @@ public class NewWalletController {
     @PostMapping
     public String createNewWallet(
             @ModelAttribute Wallet wallet,
-            Model model
-    ) {
+            Model model) {
         log.info("New wallet: {}", wallet);
         if (walletService.createNewWallet(wallet)) {
             return "redirect:home.html";
@@ -39,5 +38,4 @@ public class NewWalletController {
             return "error-page";
         }
     }
-
 }

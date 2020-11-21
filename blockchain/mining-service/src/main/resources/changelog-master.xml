@@ -36,6 +36,7 @@
             `secret_key` varchar(255) NOT NULL,
             `wallet_name` varchar(255) NULL,
             `wallet_owner` varchar(255) NULL,
+            balance int NULL,
             constraint wallet_pk
             primary key (wallet_id)
             );
@@ -67,8 +68,6 @@
             foreign key(AppUser_id) references user(id),
             foreign key(roles_id) references approle(id)
             );
-
-
         </sql>
         <sql>
             insert into blocks (id, time_stamp, previous_hash, hash, transaction, nonce)
@@ -79,14 +78,32 @@
             values('08c83f6d-72a4-4d87-99d8-5d10386d7594', 'admin',
             '$2a$10$gibCyepn53Rs8qHTR8n7S.CFLJV0jWnTErN7T4YkaSmqWA1.meClC', 'profamsoft@gmail.com', '+375291544038');
 
+            insert into user (id, userName, userPassword, email, mobileNumber)
+            values('aeccef5b-b7ab-4042-917f-f29759a7a150', 'user',
+            '$2a$10$JzjwNXg9C6r3VgUnWUi7V.igpEQSWfDkVUKo9.mm.4uaRBMuoneg6', 'userexample@gmail.com', '+375291234567');
+
             insert into transaction (id, wallet_id, receiver_wallet_id, sender_secret_key, value, transaction_status)
             values('0', '0', '0', '0', '50', 'genesis');
 
             insert into approle (id, roleName)
             values('9a2a6cd8-a0d3-42cc-9180-8e73e633423b', 'ADMIN');
 
+            insert into approle (id, roleName)
+            values('dc13e0b1-0da7-4e3f-90fb-8f2fb86efaa5', 'USER');
+
             insert into user_approle (AppUser_id, roles_id)
             values('08c83f6d-72a4-4d87-99d8-5d10386d7594', '9a2a6cd8-a0d3-42cc-9180-8e73e633423b');
+
+            insert into user_approle (AppUser_id, roles_id)
+            values('aeccef5b-b7ab-4042-917f-f29759a7a150', 'dc13e0b1-0da7-4e3f-90fb-8f2fb86efaa5');
+
+            insert into wallet (wallet_id, secret_key, wallet_name, wallet_owner, balance)
+            values('c416138b-a13a-44c2-9a19-13b595b90425', '123', 'rich user', 'aeccef5b-b7ab-4042-917f-f29759a7a150',
+            1);
+
+            insert into wallet (wallet_id, secret_key, wallet_name, wallet_owner, balance)
+            values('7e337b38-1f6c-42cc-8f6a-fcec4d89c8df', '1234', 'empty wallet',
+            'aeccef5b-b7ab-4042-917f-f29759a7a150', 0);
         </sql>
     </changeSet>
 </databaseChangeLog>

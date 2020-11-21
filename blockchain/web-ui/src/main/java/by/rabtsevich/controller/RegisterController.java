@@ -26,5 +26,4 @@ public class RegisterController {
         appUserService.createNewUser(appUser);
         return "redirect:home.html";
     }
-
 }

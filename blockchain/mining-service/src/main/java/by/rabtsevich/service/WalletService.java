@@ -5,7 +5,7 @@ import by.rabtsevich.repository.WalletRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
+//service for add reward to wallet
 @Service
 public class WalletService {
 
@@ -20,5 +20,4 @@ public class WalletService {
     public void update(Wallet wallet) {
         walletRepository.save(wallet);
     }
-
 }

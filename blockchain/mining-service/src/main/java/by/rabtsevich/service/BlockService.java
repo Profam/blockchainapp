@@ -19,7 +19,7 @@ public class BlockService {
 
     @Autowired
     private TransactionService transactionService;
-
+    //create block with hash of accepted transactions
     public Block createBlock() throws NoSuchAlgorithmException {
         Block block = new Block();
         block.setBlockId(getLastBlock().getBlockId() + 1);
@@ -32,6 +32,7 @@ public class BlockService {
         return block;
     }
 
+    //calculate hash of blockToMine until it's not have requirement number of zeros at the beginning of hash
     public Block mineBlock(Block blockToMine, int difficulty) throws NoSuchAlgorithmException {
         int nonce = blockToMine.getNonce();
         blockToMine.setHash(HashUtil.generate(blockToMine));
@@ -40,16 +41,11 @@ public class BlockService {
             blockToMine.setNonce(nonce);
             blockToMine.setHash(HashUtil.generate(blockToMine));
         }
-
         return blockToMine;
     }
 
-    public Block saveNewBlock(Block block) {
-        return blockRepository.save(block);
-    }
-
-    public Block getFirstBlock(long id) {
-        return blockRepository.findById(id).orElse(null);
+    public void saveNewBlock(Block block) {
+        blockRepository.save(block);
     }
 
     public Block getLastBlock() {

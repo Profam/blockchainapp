@@ -33,7 +33,7 @@ public class NewTransactionController {
             transactionService.createNewTransaction(walletId, transaction);
             return "redirect:/wallet-list/{walletId}/transaction-list.html";
         } else {
-            model.addAttribute("errorMessage", "can not create a new transaction, check id and value");
+            model.addAttribute("errorMessage", "can not create a new transaction, check id or value");
             return "error-page";
         }
     }

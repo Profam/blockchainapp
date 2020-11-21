@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.util.List;
 
 @Data
@@ -22,7 +23,7 @@ public class AppUser {
     private String userName;
 
     private String userPassword;
-
+    @Email
     private String email;
 
     private String mobileNumber;
@@ -30,5 +31,4 @@ public class AppUser {
     @ManyToMany(cascade = CascadeType.ALL,
             fetch = FetchType.EAGER)
     private List<AppRole> roles;
-
 }
